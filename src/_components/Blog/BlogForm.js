@@ -14,8 +14,6 @@ class BlogForm extends React.Component {
 
   renderInput = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
-
-    console.log(input);
     return (
       <div className={className}>
         <label>{label}</label>
@@ -37,9 +35,22 @@ class BlogForm extends React.Component {
     );
   };
 
+  renderCheckbox = ({ input, label, meta }) => {
+    const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+    console.log(input);
+    return (
+      <div className={className}>
+        <label>{label}</label>
+        <div>
+          <input className="ui checkbox" type="checkbox" {...input} />
+          <label>{label}</label>
+        </div>
+      </div>
+    );
+  };
+
   renderSelect = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
-
     return (
       <div className={className}>
         <label>{label}</label>
@@ -49,6 +60,7 @@ class BlogForm extends React.Component {
           <option value="cloud">Cloud</option>
           <option value="js">Javascript</option>
         </select>
+        <div />
       </div>
     );
   };
@@ -74,11 +86,12 @@ class BlogForm extends React.Component {
           component={this.renderSelect}
           label="Enter Category"
         />
-       {/*  <Field
+        {/* <Field name="tag" component={this.renderCheckbox} label="Enter Tags" /> */}
+        <Field
           name="content"
           component={this.renderTextArea}
           label="Enter Content"
-        /> */}
+        />
 
         <button className="ui button primary">Submit</button>
         <Link to={`/blogs`} className="ui button negative">

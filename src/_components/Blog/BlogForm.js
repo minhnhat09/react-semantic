@@ -15,11 +15,40 @@ class BlogForm extends React.Component {
   renderInput = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
 
+    console.log(input);
     return (
       <div className={className}>
         <label>{label}</label>
         <input {...input} autoComplete="off" />
         {this.renderError(meta)}
+      </div>
+    );
+  };
+
+  renderTextArea = ({ input, label, meta }) => {
+    const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+
+    return (
+      <div className={className}>
+        <label>{label}</label>
+        <textarea {...input} rows="10" />
+        {this.renderError(meta)}
+      </div>
+    );
+  };
+
+  renderSelect = ({ input, label, meta }) => {
+    const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+
+    return (
+      <div className={className}>
+        <label>{label}</label>
+        <select multiple="" className="ui dropdown" {...input}>
+          <option value="">Select Category</option>
+          <option value="it">IT</option>
+          <option value="cloud">Cloud</option>
+          <option value="js">Javascript</option>
+        </select>
       </div>
     );
   };
@@ -40,6 +69,16 @@ class BlogForm extends React.Component {
           component={this.renderInput}
           label="Enter Description"
         />
+        <Field
+          name="category"
+          component={this.renderSelect}
+          label="Enter Category"
+        />
+       {/*  <Field
+          name="content"
+          component={this.renderTextArea}
+          label="Enter Content"
+        /> */}
 
         <button className="ui button primary">Submit</button>
         <Link to={`/blogs`} className="ui button negative">

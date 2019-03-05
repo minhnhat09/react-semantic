@@ -10,11 +10,11 @@ import {
 } from "../_constants";
 
 export const createBlog = formValues => async (dispatch, getState) => {
-  const { userId } = getState().auth;
+  const userId = getState().authentication.user.id;
   const response = await blogs.post("/blogs", { ...formValues, userId });
 
   dispatch({ type: CREATE_BLOG, payload: response.data });
-  history.push("/");
+  history.push("/blogs");
 };
 
 export const fetchBlogs = () => async dispatch => {
@@ -33,12 +33,12 @@ export const editBlog = (id, formValues) => async dispatch => {
   const response = await blogs.patch(`/blogs/${id}`, formValues);
 
   dispatch({ type: EDIT_BLOG, payload: response.data });
-  history.push("/");
+  history.push("/blogs");
 };
 
 export const deleteBlog = id => async dispatch => {
   await blogs.delete(`/blogs/${id}`);
 
   dispatch({ type: DELETE_BLOG, payload: id });
-  history.push("/");
+  history.push("/blogs");
 };

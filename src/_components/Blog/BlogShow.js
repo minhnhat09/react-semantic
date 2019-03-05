@@ -14,12 +14,11 @@ class BlogShow extends React.Component {
       return <div>Loading...</div>;
     }
 
-    const { title, description, content } = this.props.blog;
+    const { title, content } = this.props.blog;
 
     return (
       <div>
         <h1>{title}</h1>
-        <h5>{description}</h5>
         <ReactMarkdown source={content} />
       </div>
     );

@@ -36,7 +36,7 @@ class BlogList extends React.Component {
             <Link to={`/blogs/${blog.id}`} className="header">
               {blog.title}
             </Link>
-            <div className="description">{blog.description}</div>
+            <div className="description">{blog.category}</div>
           </div>
         </div>
       );

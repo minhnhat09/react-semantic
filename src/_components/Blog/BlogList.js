@@ -15,6 +15,18 @@ class BlogList extends React.Component {
     console.log("componentDidUpdate");
   }
 
+  renderCreate() {
+    if (this.props.isSignedIn) {
+      return (
+        <div style={{ textAlign: "right" }}>
+          <Link to="/blogs/new" className="ui button primary">
+            Create Blog
+          </Link>
+        </div>
+      );
+    }
+  }
+
   renderAdmin(blog) {
     if (blog.userId === this.props.currentUserId) {
       return (
@@ -31,7 +43,24 @@ class BlogList extends React.Component {
   }
 
   renderList() {
-    console.log("re render");
+    console.log("renderList", this.props.blogs, this.state);
+    if (this.state.blogFilters && this.state.blogFilters.length === 0) {
+      console.log("render with props");
+      return this.props.blogs.map(blog => {
+        return (
+          <div className="item" key={blog.id}>
+            {this.renderAdmin(blog)}
+            <i className="large middle aligned icon camera" />
+            <div className="content">
+              <Link to={`/blogs/${blog.id}`} className="header">
+                {blog.title}
+              </Link>
+              <div className="description">{blog.category}</div>
+            </div>
+          </div>
+        );
+      });
+    }
     return this.state.blogFilters.map(blog => {
       return (
         <div className="item" key={blog.id}>
@@ -61,19 +90,8 @@ class BlogList extends React.Component {
     });
   };
 
-  renderCreate() {
-    if (this.props.isSignedIn) {
-      return (
-        <div style={{ textAlign: "right" }}>
-          <Link to="/blogs/new" className="ui button primary">
-            Create Blog
-          </Link>
-        </div>
-      );
-    }
-  }
-
   render() {
+    console.log("render", this.props.blogs, this.state);
     return (
       <div>
         <h2>Blogs</h2>

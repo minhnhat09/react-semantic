@@ -82,29 +82,26 @@ class BlogForm extends React.Component {
   renderTags = ({ fields, meta: { error } }) => {
     return (
       <div>
-        <button
-          className="ui button primary"
-          onClick={e => {
-            e.preventDefault();
-            fields.push();
-          }}
-        >
-          Add Tag
-        </button>
-
+        <div className="field">
+          <label>Add tag</label>
+          <input
+            onKeyPress={e => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                fields.push(e.target.value);
+                e.target.value = "";
+              }
+            }}
+          />
+        </div>
         {fields.map((tag, index) => (
-          <div className="ui input" key={index}>
-            <i
-              className="large middle aligned icon trash"
-              onClick={() => fields.remove(index)}
-            />
-            <Field
-              name={tag}
-              type="text"
-              component={this.renderField}
-              label={`Tag #${index + 1}`}
-            />
-          </div>
+          <i
+            key={index}
+            className="ui red tag label"
+            onClick={() => fields.remove(index)}
+          >
+            {fields.get(index)}
+          </i>
         ))}
         {error && <li className="error">{error}</li>}
       </div>

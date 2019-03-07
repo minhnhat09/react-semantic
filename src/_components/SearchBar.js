@@ -10,16 +10,19 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <form className="ui form">
-        <div className="field">
-          <label>{this.props.label}</label>
+      <div className="ui search">
+        <div className="ui icon input">
           <input
+            className="prompt"
+            placeholder="Search..."
             type="text"
             value={this.state.term}
             onChange={this.onInputChange}
           />
+          <i className="search icon" />
         </div>
-      </form>
+        <div className="results" />
+      </div>
     );
   }
 }

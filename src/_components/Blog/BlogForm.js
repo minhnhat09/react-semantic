@@ -1,5 +1,5 @@
 import React from "react";
-import { Field, reduxForm } from "redux-form";
+import { FieldArray, Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
 class BlogForm extends React.Component {
   renderError({ error, touched }) {
@@ -66,7 +66,49 @@ class BlogForm extends React.Component {
   };
 
   onSubmit = formValues => {
+    console.log(formValues);
     this.props.onSubmit(formValues);
+  };
+  renderField = ({ input, label, type, meta: { touched, error } }) => (
+    <div>
+      <label>{label}</label>
+      <div>
+        <input {...input} type={type} placeholder={label} />
+        {touched && error && <span>{error}</span>}
+      </div>
+    </div>
+  );
+
+  renderTags = ({ fields, meta: { error } }) => {
+    return (
+      <div>
+        <button
+          className="ui button primary"
+          onClick={e => {
+            e.preventDefault();
+            fields.push();
+          }}
+        >
+          Add Tag
+        </button>
+
+        {fields.map((tag, index) => (
+          <div className="ui input" key={index}>
+            <i
+              className="large middle aligned icon trash"
+              onClick={() => fields.remove(index)}
+            />
+            <Field
+              name={tag}
+              type="text"
+              component={this.renderField}
+              label={`Tag #${index + 1}`}
+            />
+          </div>
+        ))}
+        {error && <li className="error">{error}</li>}
+      </div>
+    );
   };
 
   render() {
@@ -81,7 +123,11 @@ class BlogForm extends React.Component {
           component={this.renderSelect}
           label="Enter Category"
         />
-        {/* <Field name="tag" component={this.renderCheckbox} label="Enter Tags" /> */}
+        <FieldArray
+          name="tags"
+          component={this.renderTags}
+          label="Enter Tags"
+        />
         <Field
           name="content"
           component={this.renderTextArea}

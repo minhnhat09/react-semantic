@@ -21,7 +21,7 @@ class BlogEdit extends React.Component {
       <div>
         <h3>Edit a Blog</h3>
         <BlogForm
-          initialValues={_.pick(this.props.blog, 'title', 'content', 'category')}
+          initialValues={_.pick(this.props.blog, 'title', 'content', 'category', 'tags')}
           onSubmit={this.onSubmit}
         />
       </div>

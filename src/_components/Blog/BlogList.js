@@ -43,25 +43,15 @@ class BlogList extends React.Component {
   }
 
   renderList() {
-    console.log("renderList", this.props.blogs, this.state);
     if (this.state.blogFilters && this.state.blogFilters.length === 0) {
       console.log("render with props");
-      return this.props.blogs.map(blog => {
-        return (
-          <div className="item" key={blog.id}>
-            {this.renderAdmin(blog)}
-            <i className="large middle aligned icon camera" />
-            <div className="content">
-              <Link to={`/blogs/${blog.id}`} className="header">
-                {blog.title}
-              </Link>
-              <div className="description">{blog.category}</div>
-            </div>
-          </div>
-        );
-      });
+      return this.renderListBlog(this.props.blogs);
     }
-    return this.state.blogFilters.map(blog => {
+    return this.renderListBlog(this.state.blogFilters);
+  }
+
+  renderListBlog(blogs) {
+    return blogs.map(blog => {
       return (
         <div className="item" key={blog.id}>
           {this.renderAdmin(blog)}

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
+  console.log(props);
   return (
     <div className="ui secondary pointing menu">
       <Link to="/" className="item">
@@ -11,7 +12,7 @@ const Header = () => {
         Books
       </Link>
       <div className="right menu">
-        <Link to="/" className="item">
+        <Link to="/login" className="item">
           Logout
         </Link>
       </div>

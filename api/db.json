@@ -1,0 +1,68 @@
+{
+  "streams": [
+    {
+      "title": "My Stream",
+      "description": "This is a great stream.",
+      "id": 1
+    },
+    {
+      "title": "Other Stream",
+      "description": "Here's some stream",
+      "id": 2
+    },
+    {
+      "title": "Me Streaming Component Reuse!",
+      "description": "This stream is about refactoring!!!",
+      "id": 4
+    }
+  ],
+  "blogs": [
+    {
+      "title": "java io",
+      "category": "it",
+      "tags": [
+        "java"
+      ],
+      "content": "io",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "title": "react native",
+      "category": "cloud",
+      "tags": [
+        "javascript"
+      ],
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "react semantic",
+      "category": "js",
+      "content": "semantic",
+      "userId": 1,
+      "id": 3,
+      "tags": [
+        "fdqs",
+        "fsqd",
+        "fdsq",
+        "fdsq",
+        "dsf",
+        "fsdq",
+        "sfdq"
+      ]
+    },
+    {
+      "title": "tezst",
+      "category": "it",
+      "tags": [
+        "dfsq",
+        "fqsd",
+        "fdqsaaa"
+      ],
+      "content": "fqsd",
+      "userId": 1,
+      "id": 4
+    }
+  ]
+}

@@ -56,9 +56,10 @@ class BlogForm extends React.Component {
         <label>{label}</label>
         <select multiple="" className="ui dropdown" {...input}>
           <option value="">Select Category</option>
-          <option value="it">IT</option>
-          <option value="cloud">Cloud</option>
-          <option value="js">Javascript</option>
+          <option value="algo">Algorithm and Data structure</option>
+          <option value="dataStructure">Data structure</option>
+          <option value="seniorDev">Senior Dev</option>
+          <option value="architecture">Architecture</option>
         </select>
         <div />
       </div>

@@ -63,6 +63,17 @@
       "content": "fqsd",
       "userId": 1,
       "id": 4
+    },
+    {
+      "title": "Compare react and vue",
+      "category": "seniorDev",
+      "tags": [
+        "react",
+        "vue",
+        "javascript"
+      ],
+      "userId": 1,
+      "id": 5
     }
   ]
 }

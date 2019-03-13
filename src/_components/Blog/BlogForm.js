@@ -1,6 +1,7 @@
 import React from "react";
 import { FieldArray, Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
+import {Editor, EditorState} from 'draft-js';
 class BlogForm extends React.Component {
   renderError({ error, touched }) {
     if (touched && error) {

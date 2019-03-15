@@ -18,62 +18,31 @@
   ],
   "blogs": [
     {
-      "title": "java io",
-      "category": "it",
-      "tags": [
-        "java"
-      ],
-      "content": "io",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "title": "react native",
-      "category": "cloud",
-      "tags": [
-        "javascript"
-      ],
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "title": "react semantic",
-      "category": "js",
-      "content": "semantic",
-      "userId": 1,
-      "id": 3,
-      "tags": [
-        "fdqs",
-        "fsqd",
-        "fdsq",
-        "fdsq",
-        "dsf",
-        "fsdq",
-        "sfdq"
-      ]
-    },
-    {
-      "title": "tezst",
-      "category": "it",
-      "tags": [
-        "dfsq",
-        "fqsd",
-        "fdqsaaa"
-      ],
-      "content": "fqsd",
-      "userId": 1,
-      "id": 4
-    },
-    {
       "title": "Compare react and vue",
       "category": "seniorDev",
-      "tags": [
-        "react",
-        "vue",
-        "javascript"
-      ],
+      "tags": ["react", "vue", "javascript"],
       "userId": 1,
       "id": 5
+    }
+  ],
+  "flashCards": [
+    {
+      "id": 1,
+      "front": "",
+      "back": "",
+      "tags": ["react", "vue", "javascript"],
+      "subject": "code",
+      "category": "interview",
+      "subCategory": ""
+    },
+    {
+      "id": 2,
+      "front": "",
+      "back": "",
+      "tags": ["react", "vue", "javascript"],
+      "subject": "code",
+      "category": "interview",
+      "subCategory": ""
     }
   ]
 }

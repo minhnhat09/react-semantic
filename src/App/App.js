@@ -13,6 +13,7 @@ import BlogDelete from "../_components/Blog/BlogDelete";
 import BlogShow from "../_components/Blog/BlogShow";
 import FastNoteList from "../_components/FastNote/FastNoteList";
 import FlashCardList from "../_components/FlashCard/FlashCardList";
+import ProjectList from "../_components/Project/ProjectList";
 class App extends React.Component {
   render() {
     return (
@@ -32,6 +33,8 @@ class App extends React.Component {
             <PrivateRoute exact path="/fast-notes" component={FastNoteList} />
             {/* FLASH CARDS */}
             <PrivateRoute exact path="/flash-cards" component={FlashCardList} />
+            {/* PROJECTS */}
+            <PrivateRoute exact path="/projects" component={ProjectList} />
           </Switch>
         </div>
       </Router>

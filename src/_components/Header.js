@@ -18,6 +18,9 @@ const Header = () => {
         <Link to="/flash-cards" className="item">
           Flash cards
         </Link>
+        <Link to="/projects" className="item">
+          Projects
+        </Link>
         <div className="right menu">
           <Link to="/login" className="item">
             Logout

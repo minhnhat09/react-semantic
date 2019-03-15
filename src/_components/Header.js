@@ -12,6 +12,12 @@ const Header = () => {
         <Link to="/blogs" className="item">
           Blogs
         </Link>
+        <Link to="/fast-notes" className="item">
+          Fast Notes
+        </Link>
+        <Link to="/flash-cards" className="item">
+          Flash cards
+        </Link>
         <div className="right menu">
           <Link to="/login" className="item">
             Logout

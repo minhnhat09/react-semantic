@@ -60,6 +60,7 @@ class BlogList extends React.Component {
             <Link to={`/blogs/${blog.id}`} className="header">
               {blog.title}
             </Link>
+            
             <div className="description">{blog.category}</div>
           </div>
         </div>
@@ -68,7 +69,6 @@ class BlogList extends React.Component {
   }
 
   onTermSubmit = term => {
-    console.log(term);
     let blogFilters = this.props.blogs;
     if (term && term.trim() !== "") {
       blogFilters = blogFilters.filter(

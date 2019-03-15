@@ -1,8 +1,8 @@
 import React from "react";
-import { FieldArray, Field, reduxForm } from "redux-form";
+import { FieldArray, Field } from "redux-form";
 import { Link } from "react-router-dom";
 // import {Editor, EditorState} from 'draft-js';
-class BlogForm extends React.Component {
+class FormComponent extends React.Component {
   renderError({ error, touched }) {
     if (touched && error) {
       return (
@@ -68,7 +68,6 @@ class BlogForm extends React.Component {
   };
 
   onSubmit = formValues => {
-    console.log(formValues);
     this.props.onSubmit(formValues);
   };
   renderField = ({ input, label, type, meta: { touched, error } }) => (
@@ -112,48 +111,48 @@ class BlogForm extends React.Component {
 
   render() {
     console.log(this.props);
-    return (
-      <form
-        onSubmit={this.props.handleSubmit(this.onSubmit)}
-        className="ui form error"
-      >
-        <Field name="title" component={this.renderInput} label="Enter Title" />
-        <Field
-          name="category"
-          component={this.renderSelect}
-          label="Enter Category"
-        />
-        <FieldArray
-          name="tags"
-          component={this.renderTags}
-          label="Enter Tags"
-        />
-        <Field
-          name="content"
-          component={this.renderTextArea}
-          label="Enter Content"
-        />
+    console.log(this.props.formContents.formTitle);
+    return this.props.formContents.formContent.map(field => {
+      console.log(field);
+      switch (field.type) {
+        case "text":
+          return (
+            <Field
+              name={field.name}
+              component={this.renderInput}
+              label={field.label}
+            />
+          );
+        case "select":
+          return (
+            <Field
+              name={field.name}
+              component={this.renderSelect}
+              label={field.label}
+            />
+          );
+        case "textarea":
+          return (
+            <Field
+              name={field.name}
+              component={this.renderTextArea}
+              label={field.label}
+            />
+          );
+        case "tag":
+          return (
+            <Field
+              name={field.name}
+              component={this.renderTags}
+              label={field.label}
+            />
+          );
 
-        <button className="ui button primary">Submit</button>
-        <Link to={`/blogs`} className="ui button negative">
-          Cancel
-        </Link>
-      </form>
-    );
+        default:
+          break;
+      }
+    });
   }
 }
 
-const validate = formValues => {
-  const errors = {};
-
-  if (!formValues.title) {
-    errors.title = "You must enter a title";
-  }
-
-  return errors;
-};
-
-export default reduxForm({
-  form: "blogForm",
-  validate
-})(BlogForm);
+export default FormComponent;

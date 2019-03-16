@@ -20,9 +20,24 @@
     {
       "title": "Compare react and vue",
       "category": "seniorDev",
-      "tags": ["react", "vue", "javascript"],
+      "tags": [
+        "react",
+        "vue",
+        "javascript"
+      ],
       "userId": 1,
       "id": 5
+    },
+    {
+      "title": "fdqs",
+      "category": "dataStructure",
+      "tags": [
+        "fqds",
+        "fdqs"
+      ],
+      "content": "fqds",
+      "userId": 1,
+      "id": 6
     }
   ],
   "flashCards": [
@@ -30,7 +45,11 @@
       "id": 1,
       "front": "",
       "back": "",
-      "tags": ["react", "vue", "javascript"],
+      "tags": [
+        "react",
+        "vue",
+        "javascript"
+      ],
       "subject": "code",
       "category": "interview",
       "subCategory": ""
@@ -39,10 +58,26 @@
       "id": 2,
       "front": "",
       "back": "",
-      "tags": ["react", "vue", "javascript"],
+      "tags": [
+        "react",
+        "vue",
+        "javascript"
+      ],
       "subject": "code",
       "category": "interview",
       "subCategory": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "fdqs",
+      "description": "fdsq",
+      "category": "algo",
+      "tags": [
+        "fqds"
+      ],
+      "userId": 1,
+      "id": 1
     }
   ]
 }

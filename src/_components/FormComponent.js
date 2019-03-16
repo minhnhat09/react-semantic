@@ -2,6 +2,7 @@ import React from 'react';
 import { FieldArray, Field } from 'redux-form';
 // import {Editor, EditorState} from 'draft-js';
 class FormComponent extends React.Component {
+
 	renderError({ error, touched }) {
 		if (touched && error) {
 			return (

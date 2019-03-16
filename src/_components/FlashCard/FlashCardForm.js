@@ -33,8 +33,14 @@ class FlashCardForm extends React.Component {
 
 const validate = formValues => {
 	const errors = {};
-	if (!formValues.name) {
-		errors.name = 'You must enter a project name';
+	if (!formValues.front) {
+		errors.front = 'You must enter the front of the card';
+	}
+	if (!formValues.back) {
+		errors.back = 'You must enter the back of the card';
+	}
+	if (!formValues.category) {
+		errors.category = 'You must enter category';
 	}
 
 	return errors;

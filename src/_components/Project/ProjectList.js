@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchProjects } from '../../_actions';
-import Matthew from './matthew.png';
+import Matthew from '../../_images/matthew.png';
 
 class ProjectList extends React.Component {
 	componentDidMount() {

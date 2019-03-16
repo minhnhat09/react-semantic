@@ -1,9 +1,34 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { fetchFlashCards } from '../../_actions';
+
 
 class FlashCardList extends React.Component {
-  render() {
-    return <div>FlashCardList</div>;
-  }
+	componentDidMount() {
+		this.props.fetchFlashCards();
+	}
+	render() {
+		return (
+			<div>
+				FlashCardList
+				<div style={{ textAlign: 'right' }}>
+					<Link to="/flash-cards/new" className="ui button primary">
+						Create FlashCard
+					</Link>
+				</div>
+			</div>
+		);
+	}
 }
 
-export default FlashCardList;
+const mapStateToProps = state => {
+	return {
+		projects: Object.values(state.projects),
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	{ fetchFlashCards }
+)(FlashCardList);

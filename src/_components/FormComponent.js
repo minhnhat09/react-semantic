@@ -13,7 +13,7 @@ class FormComponent extends React.Component {
 	}
 
 	renderInput = ({ input, label, meta }) => {
-    const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
+		const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
 		return (
 			<div className={className}>
 				<label>{label}</label>
@@ -49,17 +49,20 @@ class FormComponent extends React.Component {
 		);
 	};
 
-	renderSelect = ({ input, label, meta }) => {
+	renderSelect = ({ input, label, meta, selectOptions }) => {
 		const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
 		return (
 			<div className={className}>
 				<label>{label}</label>
 				<select multiple="" className="ui dropdown" {...input}>
 					<option value="">Select Category</option>
-					<option value="algo">Algorithm and Data structure</option>
-					<option value="dataStructure">Data structure</option>
-					<option value="seniorDev">Senior Dev</option>
-					<option value="architecture">Architecture</option>
+					{selectOptions.map(o => {
+						return (
+							<option key={o.value} value={o.value}>
+								{o.label}
+							</option>
+						);
+					})}
 				</select>
 				<div />
 			</div>
@@ -105,13 +108,32 @@ class FormComponent extends React.Component {
 		return this.props.formContents.formContent.map(field => {
 			switch (field.type) {
 				case 'text':
-					return <Field key={field.name} name={field.name} component={this.renderInput} label={field.label} />;
+					return (
+						<Field key={field.name} name={field.name} component={this.renderInput} label={field.label} />
+					);
 				case 'select':
-					return <Field key={field.name} name={field.name} component={this.renderSelect} label={field.label} />;
+					return (
+						<Field
+							key={field.name}
+							name={field.name}
+							component={this.renderSelect}
+							label={field.label}
+							selectOptions={field.selectOptions}
+						/>
+					);
 				case 'textarea':
-					return <Field key={field.name} name={field.name} component={this.renderTextArea} label={field.label} />;
+					return (
+						<Field key={field.name} name={field.name} component={this.renderTextArea} label={field.label} />
+					);
 				case 'tag':
-					return <FieldArray key={field.name} name={field.name} component={this.renderTags} label={field.label} />;
+					return (
+						<FieldArray
+							key={field.name}
+							name={field.name}
+							component={this.renderTags}
+							label={field.label}
+						/>
+					);
 				default:
 					break;
 			}

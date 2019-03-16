@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { history } from "../_helpers";
 const Header = () => {
-  console.log(history.location.pathname);
   if (history.location.pathname !== "/login") {
     return (
       <div className="ui secondary pointing menu">

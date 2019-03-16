@@ -98,7 +98,7 @@ class LoginPage extends React.Component {
                     Login
                   </button>
                   {loggingIn && (
-                    <div class="ui active inline loader"></div>
+                    <div className="ui active inline loader"></div>
                   )}
                 </form>
               </div>

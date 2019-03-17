@@ -16,6 +16,7 @@ import FlashCardList from '../_components/FlashCard/FlashCardList';
 import ProjectList from '../_components/Project/ProjectList';
 import FlashCardCreate from '../_components/FlashCard/FlashCardCreate';
 import ProjectCreate from '../_components/Project/ProjectCreate';
+import FlashCardCompete from '../_components/FlashCard/FlashCardCompete';
 class App extends React.Component {
 	render() {
 		return (
@@ -36,6 +37,7 @@ class App extends React.Component {
 						{/* FLASH CARDS */}
 						<PrivateRoute exact path="/flash-cards" component={FlashCardList} />
 						<PrivateRoute path="/flash-cards/new" exact component={FlashCardCreate} />
+						<PrivateRoute path="/flash-cards/compete" exact component={FlashCardCompete} />
 						{/* PROJECTS */}
 						<PrivateRoute exact path="/projects" component={ProjectList} />
 						<PrivateRoute path="/projects/new" exact component={ProjectCreate} />

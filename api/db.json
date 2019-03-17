@@ -42,49 +42,43 @@
   ],
   "flashCards": [
     {
-      "id": 1,
-      "front": "",
-      "back": "",
+      "front": "fdsq",
+      "back": "fqdsfdqs",
       "tags": [
-        "react",
-        "vue",
-        "javascript"
+        "fqds"
       ],
-      "subject": "code",
-      "category": "interview",
-      "subCategory": ""
-    },
-    {
-      "id": 2,
-      "front": "",
-      "back": "",
-      "tags": [
-        "react",
-        "vue",
-        "javascript"
-      ],
-      "subject": "code",
-      "category": "interview",
-      "subCategory": ""
-    },
-    {
       "category": "dataStructure",
       "subCategory": "tree",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "front": "fdsq",
+      "back": "fqdsfdqs",
       "tags": [
-        "fdqs",
-        "fqds",
-        "fdsq"
+        "fqds"
       ],
-      "back": "fqdsfqs",
-      "front": "fadfqsfdqs",
+      "category": "dataStructure",
+      "subCategory": "tree",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "front": "fdsq",
+      "back": "fqdsfdqs",
+      "tags": [
+        "fqds"
+      ],
+      "category": "dataStructure",
+      "subCategory": "tree",
       "userId": 1,
       "id": 3
     },
     {
-      "front": "fdqs",
-      "back": "fdsq",
+      "front": "fdsq",
+      "back": "fqdsfdqs",
       "tags": [
-        "fdq"
+        "fqds"
       ],
       "category": "dataStructure",
       "subCategory": "tree",
@@ -92,6 +86,13 @@
       "id": 4
     },
     {
+      "front": "fdsq",
+      "back": "fqdsfdqs",
+      "tags": [
+        "fqds"
+      ],
+      "category": "dataStructure",
+      "subCategory": "tree",
       "userId": 1,
       "id": 5
     }

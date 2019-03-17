@@ -5,6 +5,7 @@ import { users } from "./users.reducer";
 import blogs from "./blogs.reducer";
 import projects from "./projects.reducer";
 import flashCards from "./flashCards.reducer";
+import fastNotes from "./fastNotes.reducer";
 import { alert } from "./alert.reducer";
 import { reducer as formReducer } from 'redux-form';
 
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   blogs,
   projects,
   flashCards,
+  fastNotes,
   form: formReducer
 });
 

@@ -38,6 +38,17 @@
       "content": "fqds",
       "userId": 1,
       "id": 6
+    },
+    {
+      "title": "Tài liệu học tập graph",
+      "category": "algo",
+      "tags": [
+        "graph",
+        "algo"
+      ],
+      "content": "Tài liệu học tập graph\n",
+      "userId": 1,
+      "id": 7
     }
   ],
   "flashCards": [

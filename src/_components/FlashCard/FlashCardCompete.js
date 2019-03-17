@@ -42,6 +42,7 @@ class FlashCardCompete extends React.Component {
 	render() {
 		return (
 			<div>
+        
 				{this.renderCard()}
 				<br />
 				<div style={{ textAlign: 'left' }}>

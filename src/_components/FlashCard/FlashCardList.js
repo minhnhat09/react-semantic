@@ -11,14 +11,14 @@ class FlashCardList extends React.Component {
 		return (
 			<div>
 				FlashCardList
-				<div class="ui cards">
-					<div class="card">
-						<div class="content">
-							<div class="ui feed">
+				<div className="ui cards">
+					<div className="card">
+						<div className="content">
+							<div className="ui feed">
 								<div className="event">
 									<div className="label">
-										<i class="pencil alternate blue circle icon" />
-										<i class="minus red circle icon" />
+										<i className="pencil alternate blue circle icon" />
+										<i className="minus red circle icon" />
 									</div>
 									<div className="content">
 										<div className="summary">

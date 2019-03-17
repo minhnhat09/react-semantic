@@ -14,6 +14,7 @@ class FormComponent extends React.Component {
 	}
 
 	renderInput = ({ input, label, meta }) => {
+		console.log(input);
 		const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
 		return (
 			<div className={className}>

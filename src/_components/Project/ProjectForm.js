@@ -8,6 +8,7 @@ class ProjectForm extends React.Component {
 	onSubmit = formValues => {
 		this.props.onSubmit(formValues);
 	};
+
 	renderField = ({ input, label, type, meta: { touched, error } }) => (
 		<div>
 			<label>{label}</label>

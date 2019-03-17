@@ -1,5 +1,5 @@
 import React from 'react';
-import Matthew from '../../_images/matthew.png';
+
 class FastNoteList extends React.Component {
 	renderFastNoteForm() {
 		return <div>form</div>;
@@ -7,12 +7,12 @@ class FastNoteList extends React.Component {
 
 	renderFastNotes() {
 		return (
-			<div class="ui feed">
-				<h3 class="ui header">17/03/2019</h3>
+			<div className="ui feed">
+				<h3 className="ui header">17/03/2019</h3>
 				<div className="event" style={{ background: 'white' }}>
 					<div className="label">
-						<i class="pencil alternate blue circle icon" />
-						<i class="minus red circle icon" />
+						<i className="pencil alternate blue circle icon" />
+						<i className="minus red circle icon" />
 					</div>
 					<div className="content">
 						<div className="summary">

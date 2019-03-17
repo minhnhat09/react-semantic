@@ -12,7 +12,7 @@ class FastNoteList extends React.Component {
 						</div>
 						<div className="content">
 							<div className="summary">
-								<a>Joe Henderson</a> posted on his page
+								Ý tưởng làm app
 								<div className="date">3 days ago</div>
 							</div>
 							<div>
@@ -21,14 +21,12 @@ class FastNoteList extends React.Component {
 								come back for more of the same another day soon.
 							</div>
 							<div className="meta">
-								<a className="like">
-									<i className="like icon" /> 5 Likes
-								</a>
+								<i className="ui red tag label">algo</i>
+								<i className="ui yellow tag label">data</i>
 							</div>
 						</div>
 					</div>
 				</div>
-			
 			</div>
 		);
 	}

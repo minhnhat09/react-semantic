@@ -1,21 +1,6 @@
 import React from 'react';
-
+import { colors } from '../_constants';
 const TagComponent = ({ tags }) => {
-	const colors = [
-		'red',
-		'orange',
-		'yellow',
-		'olive',
-		'green',
-		'teal',
-		'blue',
-		'violet',
-		'purple',
-		'pink',
-		'brown',
-		'grey',
-		'black',
-	];
 	const renderTags = tags => {
 		return tags.map((tag, i) => {
 			const color = colors[Math.floor(Math.random() * colors.length)];

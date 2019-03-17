@@ -1,8 +1,8 @@
 import React from 'react';
 import { FieldArray, Field } from 'redux-form';
+import { colors } from '../_constants';
 // import {Editor, EditorState} from 'draft-js';
 class FormComponent extends React.Component {
-
 	renderError({ error, touched }) {
 		if (touched && error) {
 			return (
@@ -96,7 +96,7 @@ class FormComponent extends React.Component {
 					/>
 				</div>
 				{fields.map((tag, index) => (
-					<i key={index} className="ui red tag label" onClick={() => fields.remove(index)}>
+					<i key={index} className={`ui ${colors[Math.floor(Math.random() * colors.length)]} tag label`} onClick={() => fields.remove(index)}>
 						{fields.get(index)}
 					</i>
 				))}

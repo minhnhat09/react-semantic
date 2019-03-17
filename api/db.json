@@ -53,10 +53,10 @@
   ],
   "flashCards": [
     {
-      "front": "fdsq",
-      "back": "fqdsfdqs",
+      "front": "What is Hamming Code?",
+      "back": "In telecommunication, Hamming codes are a family of linear error-correcting codes that generalize the Hamming(7,4)-code, and were invented by Richard Hamming in 1950. Hamming codes can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.",
       "tags": [
-        "fqds"
+        "algo"
       ],
       "category": "dataStructure",
       "subCategory": "tree",
@@ -64,8 +64,8 @@
       "id": 1
     },
     {
-      "front": "fdsq",
-      "back": "fqdsfdqs",
+      "front": "What is the square root of 256?",
+      "back": "16",
       "tags": [
         "fqds"
       ],
@@ -75,8 +75,8 @@
       "id": 2
     },
     {
-      "front": "fdsq",
-      "back": "fqdsfdqs",
+      "front": "Using bitwise operations, how would you test that a number is a power of 2?",
+      "back": "bool isPowerOfTwo = (x & (x - 1);",
       "tags": [
         "fqds"
       ],
@@ -86,8 +86,8 @@
       "id": 3
     },
     {
-      "front": "fdsq",
-      "back": "fqdsfdqs",
+      "front": "What is a weakly connected graph?",
+      "back": "A directed graph is weakly connected if it would be connected by ignoring the direction of edges. Thus, a weakly connected graph consists of a single piece. A directed graph is strongly connected if there is a directed path between every pair of vertices. This distinction is best made clear by considering the network of one- and two-way streets in any city. The network is strongly connected if it is possible to drive legally between every two positions. The network is weakly connected when it is possible to drive legally or illegally between every two positions. The network is disconnected if there is no possible way to drive from a to b.",
       "tags": [
         "fqds"
       ],
@@ -97,8 +97,8 @@
       "id": 4
     },
     {
-      "front": "fdsq",
-      "back": "fqdsfdqs",
+      "front": "Under what condition can you not use Djikstra's algorithm?",
+      "back": "When the graph contains a negative edge. Can cause a cycle that will be traversed infinitely.",
       "tags": [
         "fqds"
       ],

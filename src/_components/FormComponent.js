@@ -27,7 +27,6 @@ class FormComponent extends React.Component {
 
 	renderTextArea = ({ input, label, meta }) => {
 		const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
-
 		return (
 			<div className={className}>
 				<label>{label}</label>

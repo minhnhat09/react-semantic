@@ -7,7 +7,7 @@ class FastNoteList extends React.Component {
 
 	renderFastNotes() {
 		return (
-			<div class="ui placeholder segment">
+			<div className="ui placeholder segment">
 				<div className="ui feed">
 					<h3 className="ui header">17/03/2019</h3>
 					<div className="event">

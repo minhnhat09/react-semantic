@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchFlashCards } from '../../_actions';
+import TagComponent from '../TagComponent';
 
 class FlashCardList extends React.Component {
 	componentDidMount() {
@@ -20,18 +21,10 @@ class FlashCardList extends React.Component {
 									<i className="minus red circle icon" />
 								</div>
 								<div className="content">
-									<div className="summary">
-										Ý tưởng làm app
-										<div className="date">09:52</div>
-									</div>
+									<div className="summary">Flash Card</div>
+									<div>{fc.front}</div>
 									<div>
-										Ours is a life of constant reruns. We're always circling back to where we'd we
-										started, then starting all over again. Even if we don't run extra laps that day,
-										we surely will come back for more of the same another day soon.
-									</div>
-									<div>
-										<i className="ui red tag label">algo</i>
-										<i className="ui yellow tag label">data</i>
+										<TagComponent tags={fc.tags} />
 									</div>
 								</div>
 							</div>
@@ -42,7 +35,6 @@ class FlashCardList extends React.Component {
 		});
 	}
 	render() {
-		console.log(this.props);
 		return (
 			<div>
 				<div style={{ textAlign: 'left' }}>
@@ -53,7 +45,7 @@ class FlashCardList extends React.Component {
 						Compete
 					</Link>
 				</div>
-				<br/>
+				<br />
 				<div className="ui cards">{this.renderList()}</div>
 			</div>
 		);

@@ -3,34 +3,69 @@ import { connect } from 'react-redux';
 import { fetchFlashCards } from '../../_actions';
 import { Link } from 'react-router-dom';
 class FlashCardCompete extends React.Component {
+	state = {
+		currentCard: null,
+		toggleCard: true,
+	};
 	componentDidMount() {
 		this.props.fetchFlashCards();
 	}
 
-	renderCard() {
+	nextCard = () => {
+		if (this.props.flashCards && this.props.flashCards.length > 0) {
+			const currentCard = this.props.flashCards[Math.floor(Math.random() * this.props.flashCards.length)];
+			this.setState({ currentCard });
+		}
+	};
+
+	flipCard = () => {
+		this.setState({ toggleCard: !this.state.toggleCard });
+	};
+	renderCardContent(currentCard) {
+		if (currentCard) {
+			if (this.state.toggleCard) {
+				return (
+					<div>
+						Front of card
+						<br />
+						{currentCard.front}
+					</div>
+				);
+			} else {
+				return (
+					<div>
+						Back of card
+						<br />
+						{currentCard.back}
+					</div>
+				);
+			}
+		}
+		return 'Chose a card...';
+	}
+	renderCard(currentCard) {
+		let disabled = currentCard ? false : true;
 		return (
-			<div class="ui placeholder segment">
-				<div class="ui icon header">
-					<i class="pdf file outline icon" />
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-					publishing software like Aldus PageMaker including versions of Lorem Ipsum
+			<div className="ui placeholder segment">
+				<div className="ui icon header">
+					Card id: {currentCard ? currentCard.id : ''}
+					<i className="pdf file outline icon" />
+					{this.renderCardContent(currentCard)}
 				</div>
 				<div className="extra content">
 					<div className="ui three buttons">
-						<button class="ui left teal labeled icon button">
-							<i class="exchange icon" />
+						<button
+							className={`ui ${disabled ? 'disabled ' : ' '}left teal labeled icon button`}
+							onClick={this.flipCard}
+						>
+							<i className="exchange icon" />
 							Flip card
 						</button>
-						<button class="ui right green labeled icon button">
-							<i class="right play icon" />
-							I know it
+						<button className="ui right green labeled icon button">
+							<i className="right play icon" />I know it
 						</button>
-						<button class="ui right pink labeled icon button">
-							<i class="right arrow icon" />
+						<button className="ui right pink labeled icon button" onClick={this.nextCard}>
+							<i className="right arrow icon" />
 							Next
 						</button>
 					</div>
@@ -42,8 +77,7 @@ class FlashCardCompete extends React.Component {
 	render() {
 		return (
 			<div>
-        
-				{this.renderCard()}
+				{this.renderCard(this.state.currentCard)}
 				<br />
 				<div style={{ textAlign: 'left' }}>
 					<Link to="/flash-cards" className="ui red button">

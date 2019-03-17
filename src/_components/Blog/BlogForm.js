@@ -116,7 +116,6 @@ class BlogForm extends React.Component {
 				<Field name="category" component={this.renderSelect} label="Enter Category" />
 				<FieldArray name="tags" component={this.renderTags} label="Enter Tags" />
 				<Field name="content" component={this.renderTextArea} label="Enter Content" />
-
 				<button className="ui button primary">Submit</button>
 				<Link to={`/blogs`} className="ui button negative">
 					Cancel

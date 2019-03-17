@@ -5,7 +5,6 @@ import ProjectForm from './ProjectForm';
 
 class ProjectCreate extends React.Component {
 	onSubmit = formValues => {
-		console.log(formValues);
 		this.props.createProject(formValues);
 	};
 

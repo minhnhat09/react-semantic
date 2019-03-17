@@ -5,7 +5,6 @@ import FlashCardForm from './FlashCardForm';
 
 class FlashCardCreate extends React.Component {
 	onSubmit = formValues => {
-		console.log(formValues);
 		this.props.createFlashCard(formValues);
 	};
 

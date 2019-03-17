@@ -38,7 +38,6 @@ class BlogForm extends React.Component {
 
   renderCheckbox = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
-    console.log(input);
     return (
       <div className={className}>
         <label>{label}</label>
@@ -68,7 +67,6 @@ class BlogForm extends React.Component {
   };
 
   onSubmit = formValues => {
-    console.log(formValues);
     this.props.onSubmit(formValues);
   };
   renderField = ({ input, label, type, meta: { touched, error } }) => (

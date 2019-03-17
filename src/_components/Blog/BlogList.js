@@ -39,7 +39,6 @@ class BlogList extends React.Component {
 
 	renderList() {
 		if (this.state.blogFilters && this.state.blogFilters.length === 0) {
-			console.log('render with props');
 			return this.renderListBlog(this.props.blogs);
 		}
 		return this.renderListBlog(this.state.blogFilters);
@@ -73,7 +72,6 @@ class BlogList extends React.Component {
 	};
 
 	render() {
-		console.log('render', this.props.blogs, this.state);
 		return (
 			<div>
 				<h2>Blogs</h2>

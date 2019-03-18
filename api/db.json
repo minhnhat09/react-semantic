@@ -49,6 +49,15 @@
       "content": "Tài liệu học tập graph\n",
       "userId": 1,
       "id": 7
+    },
+    {
+      "title": "Algorithm and Data Structure",
+      "content": "source: https://github.com/jwasham/coding-interview-university\n\n## Prerequisite Knowledge\n- [ ] **Learn C**\n    - C is everywhere. You'll see examples in books, lectures, videos, *everywhere* while you're studying.\n    - [ ] [C Programming Language, Vol 2](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628)\n        - This is a short book, but it will give you a great handle on the C language and if you practice it a little\n            you'll quickly get proficient. Understanding C helps you understand how programs and memory work.\n        - [answers to questions](https://github.com/lekkas/c-algorithms)\n\n- [ ] **How computers process a program:**\n    - [ ] [How CPU executes a program (video)](https://www.youtube.com/watch?v=XM4lGflQFvA)\n    - [ ] [How computers calculate - ALU (video)](https://youtu.be/1I5ZMmrOfnA)\n    - [ ] [Registers and RAM (video)](https://youtu.be/fpnE6UAfbtU)\n    - [ ] [The Central Processing Unit (CPU) (video)](https://youtu.be/FZGugFqdr60)\n    - [ ] [Instructions and Programs (video)](https://youtu.be/zltgXvg6r3k)\n",
+      "userId": 1,
+      "id": 8,
+      "tags": [
+        "algo"
+      ]
     }
   ],
   "flashCards": [

@@ -33,7 +33,7 @@ export const editBlog = (id, formValues) => async dispatch => {
   const response = await blogs.patch(`/blogs/${id}`, formValues);
 
   dispatch({ type: EDIT_BLOG, payload: response.data });
-  history.push("/blogs");
+  history.push(`/blogs/${id}`);
 };
 
 export const deleteBlog = id => async dispatch => {

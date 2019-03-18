@@ -6,8 +6,8 @@ import { addFlashCardForm } from '../../_helpers';
 // import {Editor, EditorState} from 'draft-js';
 class FlashCardForm extends React.Component {
 	onSubmit = formValues => {
-		this.props.onSubmit(formValues);
-	};
+    this.props.onSubmit(formValues);
+  };
 	renderField = ({ input, label, type, meta: { touched, error } }) => (
 		<div>
 			<label>{label}</label>
@@ -22,6 +22,7 @@ class FlashCardForm extends React.Component {
 		return (
 			<form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error">
 				<FormComponent formContents={addFlashCardForm} />
+        <br/>
 				<button className="ui button primary">Submit</button>
 				<Link to={`/flash-cards`} className="ui button negative">
 					Cancel
@@ -47,6 +48,6 @@ const validate = formValues => {
 };
 
 export default reduxForm({
-	form: 'projectForm',
+	form: 'flashCardForm',
 	validate,
 })(FlashCardForm);

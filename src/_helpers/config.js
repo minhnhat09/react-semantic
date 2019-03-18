@@ -112,15 +112,37 @@ export const addFlashCardForm = {
         {
           value: "algo",
           label: "Algorithm"
+        },
+        {
+          value: "java",
+          label: "Java"
         }
       ],
+      java: {
+        name: "subCategory",
+        label: "Sub Category",
+        type: "select",
+        selectOptions: [
+          { value: "javaIO", label: "Java IO" },
+          { value: "java8", label: "Java 8 Stream" },
+          { value: "javaDateTime", label: "Java Date Time" },
+          { value: "javaGenerics", label: "Java Generics" },
+          { value: "javaCollection", label: "Java Collection" },
+          { value: "designPattern", label: "Design Pattern" },
+          { value: "solid", label: "Solid" }
+        ]
+      },
       dataStructure: {
         name: "subCategory",
         label: "Sub Category",
         type: "select",
         selectOptions: [
           { value: "tree", label: "Tree" },
-          { value: "linkedlist", label: "Linkedlist" }
+          { value: "stackQueue", label: "Stack and Queue" },
+          { value: "array", label: "Array" },
+          { value: "linkedlist", label: "Linkedlist" },
+          { value: "string", label: "String" },
+          { value: "graph", label: "Graph" }
         ]
       },
       algo: {

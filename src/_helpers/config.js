@@ -91,6 +91,11 @@ export const addResourceForm = {
 			type: 'text',
 		},
 		{
+			name: 'description',
+			label: 'Brief description about the resources',
+			type: 'text',
+		},
+		{
 			name: 'url',
 			label: 'URL',
 			type: 'text',

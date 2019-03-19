@@ -2,7 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchResources } from '../../_actions';
+import Algo4th from '../../_images/algorithm4th.png';
 import Matthew from '../../_images/matthew.png';
+import Kristy from '../../_images/kristy.png';
+import Elyse from '../../_images/elyse.png';
+import TagComponent from '../TagComponent';
 
 class ResourceList extends React.Component {
 	componentDidMount() {
@@ -10,27 +14,39 @@ class ResourceList extends React.Component {
 	}
 
 	renderList() {
-		const avatars = [];
-		avatars.push(1);
-		avatars.push(2);
-		avatars.push(3);
-		avatars.push(3);
-		return avatars.map((a, i) => {
+		let image = null;
+		return this.props.resources.map((r, i) => {
+			switch (r.category) {
+				case 'git':
+					image = Algo4th;
+					break;
+				case 'book':
+					image = Matthew;
+					break;
+				case 'course':
+					image = Kristy;
+					break;
+				case 'youtube':
+					image = Elyse;
+					break;
+
+				default:
+					break;
+			}
+
 			return (
 				<div key={i} className="card">
-					<div className="image">
-						<img alt="" src={Matthew} />
+					<div className="ui medium image">
+						<img alt="" src={image} />
 					</div>
 					<div className="content">
-						<div className="header">Matt Giampietro</div>
-						<div className="description">Matthew is an interior designer living in New York.</div>
-					</div>
-					<div className="extra content">
-						<span className="right floated">Joined in 2013</span>
-						<span>
-							<i className="user icon" />
-							75 Friends
-						</span>
+						<div className="header">{r.name}</div>
+						<div className="label">
+							<i className="pencil alternate blue circle icon" />
+							<i className="minus red circle icon" />
+						</div>
+						<div className="description">{r.description}</div>
+						<TagComponent tags={r.tags} />
 					</div>
 				</div>
 			);
@@ -40,8 +56,7 @@ class ResourceList extends React.Component {
 	render() {
 		return (
 			<div>
-				ResourceList
-				<div className="ui link cards">{this.renderList()}</div>
+				<div className="ui six doubling cards">{this.renderList()}</div>
 				<div style={{ textAlign: 'right' }}>
 					<Link to="/resources/new" className="ui button primary">
 						Create Resource

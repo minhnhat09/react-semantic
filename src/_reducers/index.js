@@ -4,6 +4,7 @@ import { authentication } from "./authentication.reducer";
 import { users } from "./users.reducer";
 import blogs from "./blogs.reducer";
 import projects from "./projects.reducer";
+import resources from "./resources.reducer";
 import flashCards from "./flashCards.reducer";
 import fastNotes from "./fastNotes.reducer";
 import { alert } from "./alert.reducer";
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   alert,
   blogs,
   projects,
+  resources,
   flashCards,
   fastNotes,
   form: formReducer

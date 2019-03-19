@@ -17,6 +17,8 @@ import ProjectList from '../_components/Project/ProjectList';
 import FlashCardCreate from '../_components/FlashCard/FlashCardCreate';
 import ProjectCreate from '../_components/Project/ProjectCreate';
 import FlashCardCompete from '../_components/FlashCard/FlashCardCompete';
+import ResourceList from '../_components/Resource/ResourceList';
+import ResourceCreate from '../_components/Resource/ResourceCreate';
 class App extends React.Component {
 	render() {
 		return (
@@ -41,6 +43,9 @@ class App extends React.Component {
 						{/* PROJECTS */}
 						<PrivateRoute exact path="/projects" component={ProjectList} />
 						<PrivateRoute path="/projects/new" exact component={ProjectCreate} />
+						{/* RESOURCES */}
+						<PrivateRoute exact path="/resources" component={ResourceList} />
+						<PrivateRoute path="/resources/new" exact component={ResourceCreate} />
 					</Switch>
 				</div>
 			</Router>

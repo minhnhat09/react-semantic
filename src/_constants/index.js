@@ -5,3 +5,4 @@ export * from './project.constants';
 export * from './flashCard.constants';
 export * from './fastNote.constants';
 export * from './util.constants';
+export * from './resource.constants';

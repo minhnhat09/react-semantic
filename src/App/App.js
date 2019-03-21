@@ -19,6 +19,7 @@ import ProjectCreate from '../_components/Project/ProjectCreate';
 import FlashCardCompete from '../_components/FlashCard/FlashCardCompete';
 import ResourceList from '../_components/Resource/ResourceList';
 import ResourceCreate from '../_components/Resource/ResourceCreate';
+import FlashCardEdit from '../_components/FlashCard/FlashCardEdit';
 class App extends React.Component {
 	render() {
 		return (
@@ -37,9 +38,10 @@ class App extends React.Component {
 						{/* FAST NOTES */}
 						<PrivateRoute exact path="/fast-notes" component={FastNoteList} />
 						{/* FLASH CARDS */}
-						<PrivateRoute exact path="/flash-cards" component={FlashCardList} />
-						<PrivateRoute path="/flash-cards/new" exact component={FlashCardCreate} />
-						<PrivateRoute path="/flash-cards/compete" exact component={FlashCardCompete} />
+						<PrivateRoute exact path="/flashCards" component={FlashCardList} />
+						<PrivateRoute path="/flashCards/edit/:id" exact component={FlashCardEdit} />
+						<PrivateRoute path="/flashCards/new" exact component={FlashCardCreate} />
+						<PrivateRoute path="/flashCards/compete" exact component={FlashCardCompete} />
 						{/* PROJECTS */}
 						<PrivateRoute exact path="/projects" component={ProjectList} />
 						<PrivateRoute path="/projects/new" exact component={ProjectCreate} />

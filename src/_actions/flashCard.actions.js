@@ -14,7 +14,7 @@ export const createFlashCard = formValues => async (dispatch, getState) => {
   const response = await backEndApi.post("/flashCards", { ...formValues, userId });
 
   dispatch({ type: CREATE_FLASHCARD, payload: response.data });
-  history.push("/flash-cards");
+  history.push("/flashCards");
 };
 
 export const fetchFlashCards = () => async dispatch => {

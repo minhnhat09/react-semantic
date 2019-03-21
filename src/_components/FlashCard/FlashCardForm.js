@@ -24,7 +24,7 @@ class FlashCardForm extends React.Component {
 				<FormComponent formContents={addFlashCardForm} />
         <br/>
 				<button className="ui button primary">Submit</button>
-				<Link to={`/flash-cards`} className="ui button negative">
+				<Link to={`/flashCards`} className="ui button negative">
 					Cancel
 				</Link>
 			</form>

@@ -14,7 +14,7 @@ const Header = () => {
         <Link to="/fast-notes" className="item">
           Fast Notes
         </Link>
-        <Link to="/flash-cards" className="item">
+        <Link to="/flashCards" className="item">
           Flash cards
         </Link>
         <Link to="/projects" className="item">

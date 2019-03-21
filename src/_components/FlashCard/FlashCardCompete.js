@@ -80,7 +80,7 @@ class FlashCardCompete extends React.Component {
 				{this.renderCard(this.state.currentCard)}
 				<br />
 				<div style={{ textAlign: 'left' }}>
-					<Link to="/flash-cards" className="ui red button">
+					<Link to="/flashCards" className="ui red button">
 						Return
 					</Link>
 				</div>

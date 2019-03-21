@@ -14,7 +14,7 @@ export const createFastNote = formValues => async (dispatch, getState) => {
   const response = await backEndApi.post("/fastNotes", { ...formValues, userId });
 
   dispatch({ type: CREATE_FASTNOTE, payload: response.data });
-  history.push("/flash-cards");
+  history.push("fastNotes");
 };
 
 export const fetchFastNotes = () => async dispatch => {

@@ -1,176 +1,235 @@
 {
-	"resources": [
-		{
-			"category": "book",
-			"name": "Algorithms, 4th Edition",
-			"description": "Sach rat hay noi ve algo java",
-			"url": "https://algs4.cs.princeton.edu/home/",
-			"tags": ["string", "graph", "sorting", "searching", "union-find"],
-			"content": "Textbook.  The textbook Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne [ Amazon · Pearson · InformIT ] surveys the most important algorithms and data structures in use today. We motivate each algorithm that we address by examining its impact on applications to science, engineering, and industry. The textbook is organized into six chapters:\nChapter 1: Fundamentals introduces a scientific and engineering basis for comparing algorithms and making predictions. It also includes our programming model.\n\nOverview. The objective of this book is to study a broad variety of important and useful algorithms—methods for solving problems that are suited for computer implementations. Algorithms go hand in hand with data structures—schemes for organizing data. This chapter introduces the basic tools that we need to study algorithms and data structures.\n1.1 Programming Model introduces our basic programming model. All of our programs are implemented using a small subset of the Java programming language plus a few of our own libraries for input and output.\n1.2 Data Abstraction emphasizes data abstraction, where we define abstract data types (ADTs). We specify an applications programming interface (API) and then use the Java class mechanism to develop an implementation for use in client code.\n1.3 Bags, Queues, and Stacks considers three fundamental ADTs: the bag, the queue, and the stack. We describe APIs and implementations using resizing arrays and linked lists.\n1.4 Analysis of Algorithms describes our approach to analyzing algorithm performance. The basis of our approach is the scientific method: we develop hypotheses about performance, create mathematical models, and run experiments to test them.\n1.5 Case Study: Union-Find is a case study where we consider solutions to a connectivity problem that uses algorithms and data structures that implement the classic union-find ADT.\n\nChapter 2: Sorting considers several classic sorting algorithms, including insertion sort, mergesort, and quicksort. It also features a binary heap implementation of a priority queue.\nOverview. Sorting is the process of rearranging a sequence of objects so as to put them in some logical order. Sorting plays a major role in commercial data processing and in modern scientific computing. Applications abound in transaction processing, combinatorial optimization, astrophysics, molecular dynamics, linguistics, genomics, weather prediction, and many other fields.\nIn this chapter, we consider several classical sorting methods and an efficient implementation of a fundamental data type known as the priority queue. We discuss the theoretical basis for comparing sorting algorithms and conclude the chapter with a survey of applications of sorting and priority-queue algorithms.\n\n2.1 Elementary Sorts introduces selection sort, insertion sort, and shellsort.\n2.2 Mergesort describes megesort, a sorting algorithm that is guaranteed to run in linearithmic time.\n2.3 Quicksort describes quicksort, which is used more widely than any other sorting algorithm.\n2.4 Priority Queues introduces the priority queue data type and an efficient implementation using a binary heap. It also introdues heapsort.\n2.5 Applications describes applications of sorting, including using alternate orderings, selection, the system sort, and stability.\n\nChapter 3: Searching describes several classic symbol-table implementations, including binary search trees, red–black trees, and hash tables.\n\nOverview. Modern computing and the internet have made accessible a vast amount of information. The ability to efficiently search through this information is fundamental to computation. This chapter describes classical searching algorithms that have proven to be effective in numerous applications for decades. We use the term symbol table to describe an abstract mechanism where we save information (a value) that we can later search for and retrieve by specifying a key.\n3.1 Elementary Symbol Tables includes unordered and ordered implementations, using arrays or linked lists.\n3.2 Binary Search Trees describes binary search trees.\n3.3 Balanced Search Trees describes red-black BSTs, a data structure that guarantees logarithmic performance per symbol table operation.\n3.4 Hash Tables describes two classic hashing algorithms: separate chaining and linear probing.\n3.5 Applications introduces the set data type and includes numerous applications of symbol tables and sets.\n\n\nChapter 4: Graphs surveys the most important graph-processing problems, including depth-first search, breadth-first search, minimum spanning trees, and shortest paths.\n\nOverview. Pairwise connections between items play a critical role in a vast array of computational applications. The relationships implied by these connections lead to a host of natural questions: Is there a way to connect one item to another by following the connections? How many other items are connected to a given item? What is the shortest chain of connections between this item and this other item? The table below illustrates the diversity of applications that involve graph processing.\nTypical graph applications\n\nWe progress through the four most important types of graph models: undirected graphs (with simple connections), digraphs graphs (where the direction of each connection is significant), edge-weighted graphs (where each connection has an software associated weight), and edge-weighted digraphs (where each connection has both a direction and a weight).\n\n4.1 Undirected Graphs introduces the graph data type, including depth-first search and breadth-first search.\n4.2 Directed Graphs introduces the digraph data type, including topological sort and strong components.\n4.3 Minimum Spanning Trees describes the minimum spanning tree problem and two classic algorithms for solving it: Prim and Kruskal.\n4.4 Shortest Paths introduces the shortest path problem and two classic algorithms for solving it: Dijkstra's algorithm and Bellman-Ford.\n\nChapter 5: Strings investigates specialized algorithms for string processing, including radix sorting, substring search, tries, regular expressions, and data compression.\n\n\nOverview. We communicate by exchanging strings of characters. We consider classic algorithms for addressing the underlying computational challenges surrounding applications such as the following:\n5.1 String Sorts includes LSD radix sort, MSD radix sort, and 3-way radix quicksort for sorting arrays of strings.\n5.2 Tries describes R-way tries and ternary search tries for implementing symbol tables with string keys.\n5.3 Substring Search describes algorithms for searching for a substring in a large piece of text, including the classic Knuth-Morris-Pratt, Boyer-Moore, and Rabin-Karp algorithms.\n5.4 Regular Expressions introduces a quintessential search tool known as grep that we use to search for incompletely specified substrings.\n5.5 Data Compression introduces data compression, where we try to reduce the size of a string to the minimum possible. We present the classic Huffman and LZW algorithms.\n\n\nChapter 6: Context highlights connections to systems programming, scientific computing, commercial applications, operations research, and intractability.\n\nOverview.\n\nJava programs in this chapter. Below is a list of Java programs in this chapter. Click on the program name to access the Java code; click on the reference number for a brief description; read the textbook for a full discussion.",
-			"userId": 1,
-			"id": 1
-		},
-		{
-			"name": "Course Bala",
-			"description": "Tất cả các course Bala trên udemy",
-			"url": "https://www.udemy.com/home/my-courses/learning/?instructor_filter=837576",
-			"tags": ["string", "graph"],
-			"content": "https://www.udemy.com/algorithmic-problems-in-java/learn/lecture/3857734#overview\n\nhttps://www.udemy.com/artificial-intelligence-games-in-java/learn/lecture/3099620#overview\n\nhttps://www.udemy.com/algorithms-and-data-structures-in-java-part-ii/learn/lecture/4956294#overview",
-			"category": "course",
-			"userId": 1,
-			"id": 2
-		},
-		{
-			"name": "Course Ramus Plural",
-			"description": "2 course khá hay nói về algo",
-			"tags": ["bloom-filter", "general", "tries", "hash"],
-			"content": "https://app.pluralsight.com/library/courses/using-advanced-data-structures-modern-applications/table-of-contents\n\nhttps://app.pluralsight.com/library/courses/algorithmics-introduction/table-of-contents",
-			"url": "https://app.pluralsight.com/profile/author/rasmus-amossen",
-			"category": "course",
-			"userId": 1,
-			"id": 3
-		},
-		{
-			"url": "https://github.com/jwasham/coding-interview-university",
-			"name": "Github jwasham",
-			"description": "Tổng hợp tất cả những điều cần học về algo và datastrucutre",
-			"tags": ["general"],
-			"category": "git",
-			"userId": 1,
-			"id": 4
-		},
-		{
-			"url": "https://github.com/trekhleb/javascript-algorithms",
-			"name": "Github trekleb",
-			"description": "Tổng hợp các thuật toán về algo bằng javascript",
-			"category": "git",
-			"tags": ["general"],
-			"userId": 1,
-			"id": 5
-		}
-	],
-	"streams": [
-		{
-			"title": "My Stream",
-			"description": "This is a great stream.",
-			"id": 1
-		},
-		{
-			"title": "Other Stream",
-			"description": "Here's some stream",
-			"id": 2
-		},
-		{
-			"title": "Me Streaming Component Reuse!",
-			"description": "This stream is about refactoring!!!",
-			"id": 4
-		}
-	],
-	"blogs": [
-		{
-			"title": "Compare react and vue",
-			"category": "seniorDev",
-			"tags": ["react", "vue", "javascript"],
-			"userId": 1,
-			"id": 5
-		},
-		{
-			"title": "fdqs",
-			"category": "dataStructure",
-			"tags": ["fqds", "fdqs"],
-			"content": "fqds",
-			"userId": 1,
-			"id": 6
-		},
-		{
-			"title": "Tài liệu học tập graph",
-			"category": "algo",
-			"tags": ["graph", "algo"],
-			"content": "Tài liệu học tập graph\n",
-			"userId": 1,
-			"id": 7
-		},
-		{
-			"title": "Algorithm and Data Structure",
-			"content": "source: https://github.com/jwasham/coding-interview-university\n\n## Prerequisite Knowledge\n- [ ] **Learn C**\n    - C is everywhere. You'll see examples in books, lectures, videos, *everywhere* while you're studying.\n    - [ ] [C Programming Language, Vol 2](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628)\n        - This is a short book, but it will give you a great handle on the C language and if you practice it a little\n            you'll quickly get proficient. Understanding C helps you understand how programs and memory work.\n        - [answers to questions](https://github.com/lekkas/c-algorithms)\n\n- [ ] **How computers process a program:**\n    - [ ] [How CPU executes a program (video)](https://www.youtube.com/watch?v=XM4lGflQFvA)\n    - [ ] [How computers calculate - ALU (video)](https://youtu.be/1I5ZMmrOfnA)\n    - [ ] [Registers and RAM (video)](https://youtu.be/fpnE6UAfbtU)\n    - [ ] [The Central Processing Unit (CPU) (video)](https://youtu.be/FZGugFqdr60)\n    - [ ] [Instructions and Programs (video)](https://youtu.be/zltgXvg6r3k)\n",
-			"userId": 1,
-			"id": 8,
-			"tags": ["algo"]
-		}
-	],
-	"flashCards": [
-		{
-			"front": "What is Hamming Code?",
-			"back": "In telecommunication, Hamming codes are a family of linear error-correcting codes that generalize the Hamming(7,4)-code, and were invented by Richard Hamming in 1950. Hamming codes can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.",
-			"tags": ["algo"],
-			"category": "dataStructure",
-			"subCategory": "tree",
-			"userId": 1,
-			"id": 1
-		},
-		{
-			"front": "What is the square root of 256?",
-			"back": "16",
-			"tags": ["fqds"],
-			"category": "dataStructure",
-			"subCategory": "tree",
-			"userId": 1,
-			"id": 2
-		},
-		{
-			"front": "Using bitwise operations, how would you test that a number is a power of 2?",
-			"back": "bool isPowerOfTwo = (x & (x - 1);",
-			"tags": ["fqds"],
-			"category": "dataStructure",
-			"subCategory": "tree",
-			"userId": 1,
-			"id": 3
-		},
-		{
-			"front": "What is a weakly connected graph?",
-			"back": "A directed graph is weakly connected if it would be connected by ignoring the direction of edges. Thus, a weakly connected graph consists of a single piece. A directed graph is strongly connected if there is a directed path between every pair of vertices. This distinction is best made clear by considering the network of one- and two-way streets in any city. The network is strongly connected if it is possible to drive legally between every two positions. The network is weakly connected when it is possible to drive legally or illegally between every two positions. The network is disconnected if there is no possible way to drive from a to b.",
-			"tags": ["fqds"],
-			"category": "dataStructure",
-			"subCategory": "tree",
-			"userId": 1,
-			"id": 4
-		},
-		{
-			"front": "Under what condition can you not use Djikstra's algorithm?",
-			"back": "When the graph contains a negative edge. Can cause a cycle that will be traversed infinitely.",
-			"tags": ["fqds"],
-			"category": "dataStructure",
-			"subCategory": "tree",
-			"userId": 1,
-			"id": 5
-		},
-		{
-			"front": "vfdqs",
-			"back": "fdsq",
-			"category": "dataStructure",
-			"subCategory": "tree",
-			"tags": ["ffqsd", "fsdq", "fqds"],
-			"userId": 1,
-			"id": 6
-		},
-		{
-			"front": "Differences between HashMap and Hashtable?",
-			"back": "There are several differences between HashMap and Hashtable in Java:\n\nHashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.\n\nHashtable does not allow null keys or values. HashMap allows one null key and any number of null values.\n\nOne of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order (which is insertion order by default), you could easily swap out the HashMap for a LinkedHashMap. This wouldn't be as easy if you were using Hashtable.\n\nSince synchronization is not an issue for you, I'd recommend HashMap. If synchronization becomes an issue, you may also look at ConcurrentHashMap.",
-			"category": "java",
-			"subCategory": "javaCollection",
-			"tags": ["hashmap", "hashtable"],
-			"userId": 1,
-			"id": 7
-		}
-	],
-	"projects": [
-		{
-			"name": "fdqs",
-			"description": "fdsq",
-			"category": "algo",
-			"tags": ["fqds"],
-			"userId": 1,
-			"id": 1
-		}
-	]
+  "resources": [
+    {
+      "category": "book",
+      "name": "Algorithms, 4th Edition",
+      "description": "Sach rat hay noi ve algo java",
+      "url": "https://algs4.cs.princeton.edu/home/",
+      "tags": [
+        "string",
+        "graph",
+        "sorting",
+        "searching",
+        "union-find"
+      ],
+      "content": "Textbook.  The textbook Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne [ Amazon · Pearson · InformIT ] surveys the most important algorithms and data structures in use today. We motivate each algorithm that we address by examining its impact on applications to science, engineering, and industry. The textbook is organized into six chapters:\nChapter 1: Fundamentals introduces a scientific and engineering basis for comparing algorithms and making predictions. It also includes our programming model.\n\nOverview. The objective of this book is to study a broad variety of important and useful algorithms—methods for solving problems that are suited for computer implementations. Algorithms go hand in hand with data structures—schemes for organizing data. This chapter introduces the basic tools that we need to study algorithms and data structures.\n1.1 Programming Model introduces our basic programming model. All of our programs are implemented using a small subset of the Java programming language plus a few of our own libraries for input and output.\n1.2 Data Abstraction emphasizes data abstraction, where we define abstract data types (ADTs). We specify an applications programming interface (API) and then use the Java class mechanism to develop an implementation for use in client code.\n1.3 Bags, Queues, and Stacks considers three fundamental ADTs: the bag, the queue, and the stack. We describe APIs and implementations using resizing arrays and linked lists.\n1.4 Analysis of Algorithms describes our approach to analyzing algorithm performance. The basis of our approach is the scientific method: we develop hypotheses about performance, create mathematical models, and run experiments to test them.\n1.5 Case Study: Union-Find is a case study where we consider solutions to a connectivity problem that uses algorithms and data structures that implement the classic union-find ADT.\n\nChapter 2: Sorting considers several classic sorting algorithms, including insertion sort, mergesort, and quicksort. It also features a binary heap implementation of a priority queue.\nOverview. Sorting is the process of rearranging a sequence of objects so as to put them in some logical order. Sorting plays a major role in commercial data processing and in modern scientific computing. Applications abound in transaction processing, combinatorial optimization, astrophysics, molecular dynamics, linguistics, genomics, weather prediction, and many other fields.\nIn this chapter, we consider several classical sorting methods and an efficient implementation of a fundamental data type known as the priority queue. We discuss the theoretical basis for comparing sorting algorithms and conclude the chapter with a survey of applications of sorting and priority-queue algorithms.\n\n2.1 Elementary Sorts introduces selection sort, insertion sort, and shellsort.\n2.2 Mergesort describes megesort, a sorting algorithm that is guaranteed to run in linearithmic time.\n2.3 Quicksort describes quicksort, which is used more widely than any other sorting algorithm.\n2.4 Priority Queues introduces the priority queue data type and an efficient implementation using a binary heap. It also introdues heapsort.\n2.5 Applications describes applications of sorting, including using alternate orderings, selection, the system sort, and stability.\n\nChapter 3: Searching describes several classic symbol-table implementations, including binary search trees, red–black trees, and hash tables.\n\nOverview. Modern computing and the internet have made accessible a vast amount of information. The ability to efficiently search through this information is fundamental to computation. This chapter describes classical searching algorithms that have proven to be effective in numerous applications for decades. We use the term symbol table to describe an abstract mechanism where we save information (a value) that we can later search for and retrieve by specifying a key.\n3.1 Elementary Symbol Tables includes unordered and ordered implementations, using arrays or linked lists.\n3.2 Binary Search Trees describes binary search trees.\n3.3 Balanced Search Trees describes red-black BSTs, a data structure that guarantees logarithmic performance per symbol table operation.\n3.4 Hash Tables describes two classic hashing algorithms: separate chaining and linear probing.\n3.5 Applications introduces the set data type and includes numerous applications of symbol tables and sets.\n\n\nChapter 4: Graphs surveys the most important graph-processing problems, including depth-first search, breadth-first search, minimum spanning trees, and shortest paths.\n\nOverview. Pairwise connections between items play a critical role in a vast array of computational applications. The relationships implied by these connections lead to a host of natural questions: Is there a way to connect one item to another by following the connections? How many other items are connected to a given item? What is the shortest chain of connections between this item and this other item? The table below illustrates the diversity of applications that involve graph processing.\nTypical graph applications\n\nWe progress through the four most important types of graph models: undirected graphs (with simple connections), digraphs graphs (where the direction of each connection is significant), edge-weighted graphs (where each connection has an software associated weight), and edge-weighted digraphs (where each connection has both a direction and a weight).\n\n4.1 Undirected Graphs introduces the graph data type, including depth-first search and breadth-first search.\n4.2 Directed Graphs introduces the digraph data type, including topological sort and strong components.\n4.3 Minimum Spanning Trees describes the minimum spanning tree problem and two classic algorithms for solving it: Prim and Kruskal.\n4.4 Shortest Paths introduces the shortest path problem and two classic algorithms for solving it: Dijkstra's algorithm and Bellman-Ford.\n\nChapter 5: Strings investigates specialized algorithms for string processing, including radix sorting, substring search, tries, regular expressions, and data compression.\n\n\nOverview. We communicate by exchanging strings of characters. We consider classic algorithms for addressing the underlying computational challenges surrounding applications such as the following:\n5.1 String Sorts includes LSD radix sort, MSD radix sort, and 3-way radix quicksort for sorting arrays of strings.\n5.2 Tries describes R-way tries and ternary search tries for implementing symbol tables with string keys.\n5.3 Substring Search describes algorithms for searching for a substring in a large piece of text, including the classic Knuth-Morris-Pratt, Boyer-Moore, and Rabin-Karp algorithms.\n5.4 Regular Expressions introduces a quintessential search tool known as grep that we use to search for incompletely specified substrings.\n5.5 Data Compression introduces data compression, where we try to reduce the size of a string to the minimum possible. We present the classic Huffman and LZW algorithms.\n\n\nChapter 6: Context highlights connections to systems programming, scientific computing, commercial applications, operations research, and intractability.\n\nOverview.\n\nJava programs in this chapter. Below is a list of Java programs in this chapter. Click on the program name to access the Java code; click on the reference number for a brief description; read the textbook for a full discussion.",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Course Bala",
+      "description": "Tất cả các course Bala trên udemy",
+      "url": "https://www.udemy.com/home/my-courses/learning/?instructor_filter=837576",
+      "tags": [
+        "string",
+        "graph"
+      ],
+      "content": "https://www.udemy.com/algorithmic-problems-in-java/learn/lecture/3857734#overview\n\nhttps://www.udemy.com/artificial-intelligence-games-in-java/learn/lecture/3099620#overview\n\nhttps://www.udemy.com/algorithms-and-data-structures-in-java-part-ii/learn/lecture/4956294#overview",
+      "category": "course",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "Course Ramus Plural",
+      "description": "2 course khá hay nói về algo",
+      "tags": [
+        "bloom-filter",
+        "general",
+        "tries",
+        "hash"
+      ],
+      "content": "https://app.pluralsight.com/library/courses/using-advanced-data-structures-modern-applications/table-of-contents\n\nhttps://app.pluralsight.com/library/courses/algorithmics-introduction/table-of-contents",
+      "url": "https://app.pluralsight.com/profile/author/rasmus-amossen",
+      "category": "course",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "name": "Github jwasham",
+      "description": "Tổng hợp tất cả những điều cần học về algo và datastrucutre",
+      "tags": [
+        "general"
+      ],
+      "category": "git",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "url": "https://github.com/trekhleb/javascript-algorithms",
+      "name": "Github trekleb",
+      "description": "Tổng hợp các thuật toán về algo bằng javascript",
+      "category": "git",
+      "tags": [
+        "general"
+      ],
+      "userId": 1,
+      "id": 5
+    }
+  ],
+  "streams": [
+    {
+      "title": "My Stream",
+      "description": "This is a great stream.",
+      "id": 1
+    },
+    {
+      "title": "Other Stream",
+      "description": "Here's some stream",
+      "id": 2
+    },
+    {
+      "title": "Me Streaming Component Reuse!",
+      "description": "This stream is about refactoring!!!",
+      "id": 4
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Compare react and vue",
+      "category": "seniorDev",
+      "tags": [
+        "react",
+        "vue",
+        "javascript"
+      ],
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "fdqs",
+      "category": "dataStructure",
+      "tags": [
+        "fqds",
+        "fdqs"
+      ],
+      "content": "fqds",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "title": "Tài liệu học tập graph",
+      "category": "algo",
+      "tags": [
+        "graph",
+        "algo"
+      ],
+      "content": "Tài liệu học tập graph\n",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "title": "Algorithm and Data Structure",
+      "content": "source: https://github.com/jwasham/coding-interview-university\n\n## Prerequisite Knowledge\n- [ ] **Learn C**\n    - C is everywhere. You'll see examples in books, lectures, videos, *everywhere* while you're studying.\n    - [ ] [C Programming Language, Vol 2](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628)\n        - This is a short book, but it will give you a great handle on the C language and if you practice it a little\n            you'll quickly get proficient. Understanding C helps you understand how programs and memory work.\n        - [answers to questions](https://github.com/lekkas/c-algorithms)\n\n- [ ] **How computers process a program:**\n    - [ ] [How CPU executes a program (video)](https://www.youtube.com/watch?v=XM4lGflQFvA)\n    - [ ] [How computers calculate - ALU (video)](https://youtu.be/1I5ZMmrOfnA)\n    - [ ] [Registers and RAM (video)](https://youtu.be/fpnE6UAfbtU)\n    - [ ] [The Central Processing Unit (CPU) (video)](https://youtu.be/FZGugFqdr60)\n    - [ ] [Instructions and Programs (video)](https://youtu.be/zltgXvg6r3k)\n",
+      "userId": 1,
+      "id": 8,
+      "tags": [
+        "algo"
+      ]
+    },
+    {
+      "title": "aaaa",
+      "tags": [
+        "fdsq",
+        "fdqs"
+      ],
+      "content": "fqsdfqds",
+      "userId": 1,
+      "id": 9
+    }
+  ],
+  "flashCards": [
+    {
+      "front": "What is Hamming Code?",
+      "back": "In telecommunication, Hamming codes are a family of linear error-correcting codes that generalize the Hamming(7,4)-code, and were invented by Richard Hamming in 1950. Hamming codes can detect up to two-bit errors or correct one-bit errors without detection of uncorrected errors.",
+      "tags": [
+        "algo"
+      ],
+      "category": "dataStructure",
+      "subCategory": "tree",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "front": "What is the square root of 256?",
+      "back": "16",
+      "tags": [
+        "fqds"
+      ],
+      "category": "dataStructure",
+      "subCategory": "tree",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "front": "Using bitwise operations, how would you test that a number is a power of 2?",
+      "back": "bool isPowerOfTwo = (x & (x - 1);",
+      "tags": [
+        "fqds"
+      ],
+      "category": "dataStructure",
+      "subCategory": "tree",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "front": "What is a weakly connected graph?",
+      "back": "A directed graph is weakly connected if it would be connected by ignoring the direction of edges. Thus, a weakly connected graph consists of a single piece. A directed graph is strongly connected if there is a directed path between every pair of vertices. This distinction is best made clear by considering the network of one- and two-way streets in any city. The network is strongly connected if it is possible to drive legally between every two positions. The network is weakly connected when it is possible to drive legally or illegally between every two positions. The network is disconnected if there is no possible way to drive from a to b.",
+      "tags": [
+        "fqds"
+      ],
+      "category": "dataStructure",
+      "subCategory": "tree",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "front": "Under what condition can you not use Djikstra's algorithm?",
+      "back": "When the graph contains a negative edge. Can cause a cycle that will be traversed infinitely.",
+      "tags": [
+        "fqds"
+      ],
+      "category": "dataStructure",
+      "subCategory": "tree",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "front": "vfdqs",
+      "back": "fdsq",
+      "category": "dataStructure",
+      "subCategory": "tree",
+      "tags": [
+        "ffqsd",
+        "fsdq",
+        "fqds"
+      ],
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "front": "Differences between HashMap and Hashtable?",
+      "back": "There are several differences between HashMap and Hashtable in Java:\n\nHashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.\n\nHashtable does not allow null keys or values. HashMap allows one null key and any number of null values.\n\nOne of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order (which is insertion order by default), you could easily swap out the HashMap for a LinkedHashMap. This wouldn't be as easy if you were using Hashtable.\n\nSince synchronization is not an issue for you, I'd recommend HashMap. If synchronization becomes an issue, you may also look at ConcurrentHashMap.",
+      "category": "java",
+      "subCategory": "javaCollection",
+      "tags": [
+        "hashmap",
+        "hashtable"
+      ],
+      "userId": 1,
+      "id": 7
+    }
+  ],
+  "projects": [
+    {
+      "name": "fdqs",
+      "description": "fdsq",
+      "category": "algo",
+      "tags": [
+        "fqds"
+      ],
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }

@@ -10,13 +10,13 @@ import {
 export default (state = {}, action) => {
   switch (action.type) {
     case FETCH_FASTNOTES:
-      return { ...state, ..._.mapKeys(action.payload, "id") };
+      return { ...state, ..._.mapKeys(action.payload, "_id") };
     case FETCH_FASTNOTE:
-      return { ...state, [action.payload.id]: action.payload };
+      return { ...state, [action.payload._id]: action.payload };
     case CREATE_FASTNOTE:
-      return { ...state, [action.payload.id]: action.payload };
+      return { ...state, [action.payload._id]: action.payload };
     case EDIT_FASTNOTE:
-      return { ...state, [action.payload.id]: action.payload };
+      return { ...state, [action.payload._id]: action.payload };
     case DELETE_FASTNOTE:
       return _.omit(state, action.payload);
     default:

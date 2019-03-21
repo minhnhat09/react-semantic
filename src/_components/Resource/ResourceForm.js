@@ -24,7 +24,7 @@ class ResourceForm extends React.Component {
 			<form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error">
 				<FormComponent formContents={addResourceForm} />
 				<button className="ui button primary">Submit</button>
-				<Link to={`/projects`} className="ui button negative">
+				<Link to={`/resources`} className="ui button negative">
 					Cancel
 				</Link>
 			</form>
@@ -35,13 +35,13 @@ class ResourceForm extends React.Component {
 const validate = formValues => {
 	const errors = {};
 	if (!formValues.name) {
-		errors.name = 'You must enter a project name';
+		errors.name = 'You must enter a resource name';
 	}
 
 	return errors;
 };
 
 export default reduxForm({
-	form: 'projectForm',
+	form: 'resourceForm',
 	validate,
 })(ResourceForm);

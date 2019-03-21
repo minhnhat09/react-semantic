@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 class BlogShow extends React.Component {
   componentDidMount() {
     const { id } = this.props.match.params;
-
     this.props.fetchBlog(id);
   }
 
@@ -16,15 +15,14 @@ class BlogShow extends React.Component {
       return <div>Loading...</div>;
     }
 
-    let { id, title, content, tags } = this.props.blog;
+    let { _id, title, content, tags } = this.props.blog;
     if (!tags) {
       tags = [];
     }
-    console.log(this.props.blog);
     return (
       <div>
         <h1>
-          <Link to={`/blogs/edit/${id}`}>{title}</Link>
+          <Link to={`/blogs/edit/${_id}`}>{title}</Link>
         </h1>
         <TagComponent tags={tags} />
         <ReactMarkdown source={content} />

@@ -26,10 +26,10 @@ class BlogList extends React.Component {
 		if (blog.userId === this.props.currentUserId) {
 			return (
 				<div className="right floated content">
-					<Link to={`/blogs/edit/${blog.id}`} className="ui button primary">
+					<Link to={`/blogs/edit/${blog._id}`} className="ui button primary">
 						Edit
 					</Link>
-					<Link to={`/blogs/delete/${blog.id}`} className="ui button negative">
+					<Link to={`/blogs/delete/${blog._id}`} className="ui button negative">
 						Delete
 					</Link>
 				</div>
@@ -47,11 +47,11 @@ class BlogList extends React.Component {
 	renderListBlog(blogs) {
 		return blogs.map(blog => {
 			return (
-				<div className="item" key={blog.id}>
+				<div className="item" key={blog._id}>
 					{this.renderAdmin(blog)}
 					<i className="large middle aligned icon camera" />
 					<div className="content">
-						<Link to={`/blogs/${blog.id}`} className="header">
+						<Link to={`/blogs/${blog._id}`} className="header">
 							{blog.title}
 						</Link>
 						<div className="description">{blog.category}</div>
